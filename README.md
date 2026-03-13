@@ -13,7 +13,30 @@ A live demo video is available at: https://www.youtube.com/watch?v=Xd5qORL9RQs
 A Django web application for a Wikipedia-like online encyclopedia. The encyclopedia entries are stored in Markdown and are converted to HTML before being displayed to the user. This makes them more human-friendly to write and edit. 
 ### Demo
 A live demo video is available at: https://www.youtube.com/watch?v=7snXCanVW7k
+### Installation
+To run the project locally:
+1. Make sure that Python is installed on your system.
+2. Install the Django framework for Python.
+3. Python module dependencies: markdown2 (install via `pip3 install markdown2`)
+4. Clone the repository.
+5. From within the repository directory execute the following commands:
+   - `python manage.py migrate` to synchronize the models with the database schema.
+   - `python manage.py runserver` to run the local server.
+
+### Tech Stack
+- Back-end: Python (Django) 
+- Front-end: HTML, CSS, Bootstrap library
+- Database: SQLite
 ### Features
+The website offers the following core features:
+- **Entry Page**: Visiting `/wiki/TITLE` where `TITLE` is the title of the encyclopedia entry, renders a page that displayes the contents of that entry. If the requested entry does not exist, the user is presented with an error page indicating that.
+- **Index Page**: Visiting `/` displays a list of links to all the encyclopedia pages. Clicking any of the links takes the user directly to that entry page.
+- **Search**: Users are allowed can type queries into a search box to search for encyclopedia entries.
+  - If the query matches an encyclopedia entry, the user is redirected to that entry's page
+  - If the query doesn't match an encyclopedia entry the user is taken to a search results page that have the query as a substring. Clicking on any of the entry names takes the user to that entry's page
+- **New Page**: The user can click "Create New Page" in the sidebar to get to a page where they can create a new encyclopedia entry by entering its Markdown content in a `textarea`. If they successfully save a page, that entry is saved to disk and the user is redirected to the new entry's page.
+- **Edit Page**: On each entry page, the user is able to click a link to be taken to a page where they can edit the Markdown content of that page. Once the entry is saved, the user is redirected back to that entry's page
+- **Random Page**: Clicking "Random Page" in the sidebar takes the user to a random encyclopedia entry 
 
 ### What I implemented
 This application's distribution code is available at: https://cdn.cs50.net/web/2020/spring/projects/1/wiki.zip (accessed 13 March 2026). It includes:
@@ -22,10 +45,10 @@ This application's distribution code is available at: https://cdn.cs50.net/web/2
 - An HTML template layout along with some basic CSS for it
 
 I studied, understood them and then moved on to complete the rest of the app. Specifically, I implemented the following:
-- **Routes**: "/search", "/wiki/TITLE", "/new_entry", "/edit_entry/TITLE", "/random_entry". TITLE is a placeholder for any entry name.
+- **Routes**: All of the other routes (5) along with extending the index route.
 - **HTML Templates**: I extended the HTML by adding the necessary templates, using the layout.html from the distribution code.
 - **CSS styles**: I minimally extended the styles file to handle form styling.
-- **Forms**: I implemented the entirety of the form classes that handle form generation and validation.
+- **Forms**: all of the form classes that handle form generation and validation.
 
 ## Project 2: commerce
 This project has its own dedicated repository, available at: https://github.com/konstantinos61-0/commerce
