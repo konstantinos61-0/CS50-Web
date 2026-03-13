@@ -1,0 +1,25 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {% if entry %}
+        {{ title }} 
+        
+    {% else %}
+        Entry {{ title }} not found 
+
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+    {% if entry %}
+        {{ entry|safe }} 
+        <footer>
+            <a href="{% url 'edit_entry' title %}">Edit Page</a>
+        </footer>
+        
+    {% else %}
+        <h1>Error</h1>
+        <p>Entry {{ title }} does not exist.</p>
+
+    {% endif %}
+{% endblock %}
