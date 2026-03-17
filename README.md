@@ -56,3 +56,6 @@ This project has its own dedicated repository, available at: https://github.com/
 ## Project 3: mail
 TODO
 
+## Project 4: network
+TODO
+
