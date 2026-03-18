@@ -29,13 +29,11 @@ To run the project locally:
 - Database: SQLite
 ### Features
 The website offers the following core features:
-- **Entry Page**: Visiting `/wiki/TITLE` where `TITLE` is the title of the encyclopedia entry, renders a page that displayes the contents of that entry. If the requested entry does not exist, the user is presented with an error page indicating that.
+- **Entry Page**: Visiting `/wiki/TITLE` where `TITLE` is the title of the encyclopedia entry, renders a page that displayes the contents of that entry or an error if the entry doesn't exist.
 - **Index Page**: Visiting `/` displays a list of links to all the encyclopedia pages. Clicking any of the links takes the user directly to that entry page.
-- **Search**: Users are allowed can type queries into a search box to search for encyclopedia entries.
-  - If the query matches an encyclopedia entry, the user is redirected to that entry's page
-  - If the query doesn't match an encyclopedia entry the user is taken to a search results page that have the query as a substring. Clicking on any of the entry names takes the user to that entry's page
-- **New Page**: The user can click "Create New Page" in the sidebar to get to a page where they can create a new encyclopedia entry by entering its Markdown content in a `textarea`. If they successfully save a page, that entry is saved to disk and the user is redirected to the new entry's page.
-- **Edit Page**: On each entry page, the user is able to click a link to be taken to a page where they can edit the Markdown content of that page. Once the entry is saved, the user is redirected back to that entry's page
+- **Search**: Users can type queries into a search box to search for encyclopedia entries.
+- **New Page**: The user can click "Create New Page" in the sidebar to get to a page where they can create a new encyclopedia entry by entering its Markdown content in a `textarea`. A successfully saved entry is saved on disk.
+- **Edit Page**: On each entry page, the user is able to click a link to be taken to a page where they can edit the Markdown content of that page. 
 - **Random Page**: Clicking "Random Page" in the sidebar takes the user to a random encyclopedia entry 
 
 ### What I implemented
