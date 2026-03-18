@@ -54,7 +54,38 @@ I studied, understood them and then moved on to complete the rest of the app. Sp
 This project has its own dedicated repository, available at: https://github.com/konstantinos61-0/commerce
 
 ## Project 3: mail
-TODO
+A Django web application for an email client that makes API calls to send and receive emails in JSON. I designed the front-end as a Single-Page App using JavaScript and the AJAX Fetch API. Email data are transfered as JSON, parsed and utilized to properly update the web page.
+### Demo
+A live demo video is available at: https://www.youtube.com/watch?v=Xh6ox6zMf_0
+### Installation
+To run the project locally:
+1. Make sure that Python is installed on your system.
+2. Install the Django framework for Python.
+3. Clone the repository.
+4. From within the repository directory execute the following commands:
+   - `python manage.py migrate` to synchronize the models with the database schema.
+   - `python manage.py runserver` to run the local server.
+
+### Tech Stack
+- Back-end: Python (Django) 
+- Front-end: HTML, pure CSS, Bootstrap, JavaScript.
+- Database: SQLite
+### Features
+The email client offers the following core features:
+- **Send Mail**: When a user submits the email composition form, send the email using JavaScript code. 
+- **Mailbox**: When a user visits their Inbox, Sent mailbox, or Archive, the appropriate mailbox is loaded.
+- **View Email**:  When a user clicks on an email, they are taken to a view where they see the content of that email.
+- **Archive and Unarchive**: Allow users to archive and unarchive emails that they have received.
+- **Reply**: : Allow users to reply to an email. 
+
+### What I implemented
+This application's distribution code is available at: https://cdn.cs50.net/web/2020/spring/projects/3/mail.zip (accessed 18 March 2026). It includes:
+- The entirety of the server-side python code, including the API Routes used to retrieve specific email-data items from the database.
+- HTML templates and the corresponding CSS
+I studied, understood them and then completed the email client. Specifically, I implemented the following:
+- **JavaScript**: The entirety of the JavaScript code. JavaScipt is used to dynamically update the contents of the web page as the user interacts with it. This includes making AJAX API calls (Fetch) and properly handling the returned data to update the web page.
+- **HTML Templates**: I minimally extended the HTML templates to add extra views, element IDs, and classes utilized inside JavaScript code. 
+- **CSS styles**: I minimally extended the styles file to handle email list display.
 
 ## Project 4: network
 TODO
