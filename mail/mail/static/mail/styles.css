@@ -1,0 +1,54 @@
+textarea {
+    min-height: 400px;
+}
+
+.email_preview {
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-bottom: 1px lightgray solid;
+}
+
+.email_preview:hover {
+    border: 2px lightgray solid;
+    cursor: grab;
+}
+/* Typography */
+.timestamp {
+    text-align: right;
+}
+
+/* Layout styles */
+
+.email_preview {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.email_preview section:nth-child(1) {
+    flex: 1 100px;
+    border-right: 1px solid black;
+}
+
+.email_preview section:nth-child(2) {
+    flex: 3 100px;
+    padding-left: 5px;
+}
+
+.email_preview section:nth-child(3) {
+    flex: 1 100px;
+    text-align: right;
+}
+
+.title {
+    display: flex;
+    flex: row wrap;
+}
+
+.title * {
+    flex: 1 100px;
+}
+
+.title small {
+    text-align: right;
+}
