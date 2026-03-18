@@ -52,7 +52,7 @@ I studied, understood them and then moved on to complete the rest of the app. Sp
 This project has its own dedicated repository, available at: https://github.com/konstantinos61-0/commerce
 
 ## Project 3: mail
-A Django web application for an email client that makes API calls to send and receive emails in JSON. I designed the front-end as a Single-Page App using JavaScript and the AJAX Fetch API. Email data are transfered as JSON, parsed and utilized to properly update the web page.
+A Django web application for an email client that makes API calls to send and receive emails. I designed the front-end as a Single-Page App using JavaScript and the AJAX Fetch API. Email data are transfered as JSON, parsed and utilized to properly update the web page.
 ### Demo
 A live demo video is available at: https://www.youtube.com/watch?v=Xh6ox6zMf_0
 ### Installation
