@@ -82,6 +82,7 @@ The email client offers the following core features:
 This application's distribution code is available at: https://cdn.cs50.net/web/2020/spring/projects/3/mail.zip (accessed 18 March 2026). It includes:
 - The entirety of the server-side python code, including the API Routes used to retrieve specific email-data items from the database.
 - HTML templates and the corresponding CSS
+
 I studied, understood them and then completed the email client. Specifically, I implemented the following:
 - **JavaScript**: The entirety of the JavaScript code. JavaScipt is used to dynamically update the contents of the web page as the user interacts with it. This includes making AJAX API calls (Fetch) and properly handling the returned data to update the web page.
 - **HTML Templates**: I minimally extended the HTML templates to add extra views, element IDs, and classes utilized inside JavaScript code. 
