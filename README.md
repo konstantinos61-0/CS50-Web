@@ -117,6 +117,7 @@ The application offers the following core features:
 The distribution code is available at: https://cdn.cs50.net/web/2020/spring/projects/4/network.zip (accessed 25 March 2026). It includes: the login, logout and register routes as well as a basic HTML template for a navigation bar.
 
 I studied, understood them and then completed the rest of the application. This includes:
+
 -**Routes**: All the other routes, including the API routes.
 **JavaScript**: The entirety of the JavaScript code ,including the asynchronous API calls which achieve the "like" and edit post features
 - **Models & ModelForms**: All of the Django Models and ModelForms for database handling
