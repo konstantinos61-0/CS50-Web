@@ -114,14 +114,12 @@ The application offers the following core features:
 - **"Like" & "Unlike"**: Users can click a "like" button on any post to toggle whether or not they "like" that post
 
 ### What I implemented
-The distribution code is available at: https://cdn.cs50.net/web/2020/spring/projects/4/network.zip (accessed 25 March 2026). It includes:
-- **Routes**: 
-- d
+The distribution code is available at: https://cdn.cs50.net/web/2020/spring/projects/4/network.zip (accessed 25 March 2026). It includes: the login, logout and register routes as well as a basic HTML template for a navigation bar.
 
 I studied, understood them and then completed the rest of the application. This includes:
--**Routes**:
-**Models & ModelForms**:
-- **JavaScript**: The entirety of the JavaScript code. JavaScipt is used to dynamically update the contents of the web page as the user interacts with it. This includes making AJAX API calls (Fetch) and properly handling the returned data to update the web page.
-- **HTML Templates**: I minimally extended the HTML templates to add extra views, element IDs, and classes utilized inside JavaScript code. 
-- **CSS styles**: I minimally extended the styles file to handle email list display.
+-**Routes**: All the other routes, including the API routes.
+**JavaScript**: The entirety of the JavaScript code ,including the asynchronous API calls which achieve the "like" and edit post features
+- **Models & ModelForms**: All of the Django Models and ModelForms for database handling
+- **HTML Templates**: I substantially extended the HTML templates.
+- **CSS styles**: The entirety of the CSS, including pure CSS and Bootstrap tools & utilities
 
