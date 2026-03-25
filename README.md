@@ -119,7 +119,7 @@ The distribution code is available at: https://cdn.cs50.net/web/2020/spring/proj
 I studied, understood them and then completed the rest of the application. This includes:
 
 -**Routes**: All the other routes, including the API routes.
-**JavaScript**: The entirety of the JavaScript code ,including the asynchronous API calls which achieve the "like" and edit post features
+- **JavaScript**: The entirety of the JavaScript code ,including the asynchronous API calls which achieve the "like" and edit post features
 - **Models & ModelForms**: All of the Django Models and ModelForms for database handling
 - **HTML Templates**: I substantially extended the HTML templates.
 - **CSS styles**: The entirety of the CSS, including pure CSS and Bootstrap tools & utilities
