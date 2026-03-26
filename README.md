@@ -89,7 +89,7 @@ I studied, understood them and then completed the email client. Specifically, I 
 ## Project 4: network
 A social network Django web application for making/liking posts and following users
 ### Demo
-A live demo video is available at: -
+A live demo video is available at: https://www.youtube.com/watch?v=SvSnZ-YqaRs
 ### Installation
 To run the project locally:
 1. Make sure that Python is installed on your system.
